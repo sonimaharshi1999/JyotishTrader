@@ -1,0 +1,31 @@
+ticker,incorporation_date,incorporation_location,sector
+AAPL,1976-04-01,Los Altos CA,Technology
+MSFT,1975-04-04,Albuquerque NM,Technology
+AMZN,1994-07-05,Bellevue WA,Consumer Cyclical
+TSLA,2003-07-01,San Carlos CA,Automotive
+GOOGL,1998-09-04,Menlo Park CA,Technology
+META,2004-02-04,Cambridge MA,Technology
+NVDA,1993-01-22,Sunnyvale CA,Technology
+JPM,2000-12-31,New York NY,Financial
+V,2007-10-03,San Francisco CA,Financial
+JNJ,1886-01-01,New Brunswick NJ,Healthcare
+WMT,1969-10-31,Bentonville AR,Consumer Defensive
+DIS,1923-10-16,Los Angeles CA,Communication Services
+KO,1892-01-29,Atlanta GA,Consumer Defensive
+PFE,1849-01-01,Brooklyn NY,Healthcare
+BA,1916-07-15,Seattle WA,Industrials
+RELIANCE,1966-05-08,Mumbai MH,Energy
+TCS,1968-04-01,Mumbai MH,Technology
+INFY,1981-07-02,Pune MH,Technology
+HDFCBANK,1994-08-01,Mumbai MH,Financial
+ICICIBANK,1994-01-05,Mumbai MH,Financial
+HINDUNILVR,1933-10-17,Mumbai MH,Consumer Defensive
+ITC,1910-08-24,Kolkata WB,Consumer Defensive
+SBIN,1955-07-01,Mumbai MH,Financial
+BHARTIARTL,1995-07-07,New Delhi DL,Communication Services
+KOTAKBANK,1985-11-21,Mumbai MH,Financial
+LT,1946-02-07,Mumbai MH,Industrials
+MARUTI,1981-02-24,New Delhi DL,Automotive
+SUNPHARMA,1983-01-01,Mumbai MH,Healthcare
+TATAMOTORS,1945-01-01,Mumbai MH,Automotive
+WIPRO,1945-12-29,Mumbai MH,Technology

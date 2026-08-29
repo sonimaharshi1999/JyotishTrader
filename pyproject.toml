@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jyotish-trader"
+version = "1.0.0"
+description = "JyotishTrader - Automated stock trading powered by Vedic astrology (Jyotish) - Panchang, Muhurta, Hora, Dasha, Yogas, Nakshatras"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.11"
+keywords = [
+    "vedic-astrology", "jyotish", "trading-bot", "algorithmic-trading",
+    "panchang", "muhurta", "hora", "dasha", "nakshatra", "yoga",
+    "stock-market", "nse", "bse", "zerodha", "alpaca",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = [
+    "ephem>=4.1",
+    "yfinance>=0.2.30",
+    "alpaca-trade-api>=3.0.0",
+    "kiteconnect>=5.0.0",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "pyyaml>=6.0",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.0",
+    "pydantic-settings>=2.0",
+    "click>=8.1.0",
+    "APScheduler>=3.10.0",
+    "tenacity>=8.0",
+    "exchange_calendars>=4.0",
+    "streamlit>=1.30.0",
+    "structlog>=24.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4.0"]
+
+[project.scripts]
+jyotish-trader = "main:cli"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,71 @@
+portfolio:
+  initial_capital: 100000
+  max_position_pct: 0.05
+  max_exposure_pct: 0.30
+  stop_loss_pct: 0.07
+  trailing_stop_pct: 0.07
+  max_sector_pct: 0.15
+  risk_per_trade_pct: 0.01
+  use_volatility_sizing: true
+  use_kelly_sizing: false
+
+signals:
+  buy_threshold: 3.0
+  sell_threshold: -3.0
+  require_trend_confirmation: true
+  min_confidence: 30
+  use_multi_timeframe: true
+  use_sector_weighting: true
+
+astrology:
+  orb_defaults:
+    conjunction: 8
+    sextile: 6
+    square: 8
+    trine: 8
+    opposition: 8
+  aspect_weights:
+    conjunction: 3
+    sextile: 1
+    square: -2
+    trine: 2
+    opposition: -3
+  skip_mercury_retrograde: true
+  retrograde_shadow_days: 3
+  use_lunar_phases: true
+  use_planetary_hours: true
+  use_eclipses: true
+  use_progressions: true
+  use_ceo_overlay: false
+
+market:
+  data_provider: yfinance
+  api_key: ""
+  earnings_buffer_days: 3
+
+broker:
+  provider: alpaca            # "alpaca" (US markets) or "zerodha" (Indian NSE/BSE)
+  api_key: ""
+  api_secret: ""              # Alpaca API secret
+  access_token: ""            # Zerodha Kite access token
+  base_url: "https://paper-api.alpaca.markets"
+  exchange: "NSE"             # NSE or BSE (Zerodha only)
+  live: false
+
+alerts:
+  enabled: false
+  slack_webhook: ""
+  email:
+    smtp_host: ""
+    smtp_port: 587
+    username: ""
+    password: ""
+    from_addr: ""
+    to_addrs: []
+
+database:
+  path: "data/astro_trader.db"
+
+schedule:
+  run_time: "08:00"
+  timezone: "US/Eastern"

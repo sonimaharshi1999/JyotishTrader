@@ -1,0 +1,22 @@
+services:
+  trader:
+    build: .
+    env_file: .env
+    volumes:
+      - ./data:/app/data
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    command: python main.py daemon --paper --json-output
+
+  dashboard:
+    build: .
+    env_file: .env
+    volumes:
+      - ./data:/app/data
+    ports:
+      - "8501:8501"
+    depends_on:
+      - trader
+    restart: unless-stopped
+    command: streamlit run dashboard.py --server.port 8501 --server.headless true

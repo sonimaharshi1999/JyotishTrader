@@ -7,7 +7,7 @@ build/
 .pytest_cache/
 .venv/
 venv/
+.git/
 *.db
-data/correlation.json
-.streamlit/secrets.toml
 .claude/
+notebooks/

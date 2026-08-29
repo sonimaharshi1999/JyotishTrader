@@ -1,0 +1,38 @@
+# Astrology
+ephem>=4.1
+
+# Market data & broker
+yfinance>=0.2.30
+alpaca-trade-api>=3.0.0
+kiteconnect>=5.0.0
+
+# Data
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Config & validation
+pyyaml>=6.0
+python-dotenv>=1.0.0
+pydantic>=2.0
+pydantic-settings>=2.0
+
+# CLI
+click>=8.1.0
+
+# Scheduling
+APScheduler>=3.10.0
+
+# Resilience
+tenacity>=8.0
+
+# Market calendar
+exchange_calendars>=4.0
+
+# Dashboard
+streamlit>=1.30.0
+
+# Logging
+structlog>=24.0
+
+# Testing
+pytest>=7.4.0

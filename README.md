@@ -95,6 +95,11 @@ dashboard.py      -- Streamlit web UI (7 pages)
 
 165 tests. Docker support. Structured logging. Health check endpoint.
 
+## Author
+
+**Maharshi Soni** — [@msoni029](https://github.com/msoni029)
+
+
 ## License
 
 MIT
